@@ -1,0 +1,30 @@
+:root {
+    --body-background-color: hsl(47, 88%, 63%);
+    --card-backgound-color: hsl(0, 0%, 100%);
+    --sub-text-color: hsl(0, 0%, 42%);
+    --bold-text-color: hsl(0, 0%, 7%);
+
+    --heading-text-fw: font-weight: 800;
+    --sub-text-fw: font-weight: 500;
+
+    --heading-text-fs: font-size: 1.5rem;
+    --sub-text-fs: font-size: 1rem;
+    --publish-text-fs: font-size: .875rem;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+    
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+} 
