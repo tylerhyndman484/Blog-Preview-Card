@@ -6,10 +6,12 @@
 
     --heading-text-fw: font-weight: 800;
     --sub-text-fw: font-weight: 500;
+    --author-text-fw: font-weight: 800;
 
     --heading-text-fs: font-size: 1.5rem;
     --sub-text-fs: font-size: 1rem;
     --publish-text-fs: font-size: .875rem;
+    --author-name-fs: font-size: .875rem;
 
 }
 
