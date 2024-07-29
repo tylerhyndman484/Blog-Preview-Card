@@ -5,10 +5,13 @@
     --bold-text-color: hsl(0, 0%, 7%);
 
     --heading-text-fw: font-weight: 800;
+    --category-text-fw: font-weight: 800;
+    --publish-text-fw: font-weight: 500;
     --sub-text-fw: font-weight: 500;
     --author-text-fw: font-weight: 800;
 
     --heading-text-fs: font-size: 1.5rem;
+    --category-text-fs: font-size: .875rem;
     --sub-text-fs: font-size: 1rem;
     --publish-text-fs: font-size: .875rem;
     --author-name-fs: font-size: .875rem;
@@ -19,6 +22,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Figtree';
+}
+
+h1 {
+    all: initial;
+}
+
+body {
+    background-color: var(--body-background-color);
+}
+
+.card {
+    background-color: var(--card-backgound-color);
+}
+
+.category {
+    font-size: .875rem;
+    font-weight: 800;
+}
+
+.publish {
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Figtree';
+}
+
+.subText {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.author {
+    font-size: .875rem;
+    font-weight: 800;
 }
 
 
