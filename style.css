@@ -48,7 +48,8 @@ body {
 
 .category {
     font-size: var(--category-text-fs);
-    font-weight: var(--category-text-fw)
+    font-weight: var(--category-text-fw);
+    background-color: var(--body-background-color);
 }
 
 .publish {
@@ -79,11 +80,21 @@ h1 {
     max-width: 24rem;
     height: fit-content;
     padding: 1.5rem;
+    border-radius: 1.25rem;
 }
 
 .headingImg {
-    width: 100%;
+    max-width: 100%;
+    max-height: 12.5rem;
     margin-bottom: 1.5rem;
+    border-radius: .625rem;
+}
+
+.category {
+    width: fit-content;
+    padding: .25rem .75rem;
+    border-radius: .25rem;
+    line-height: 1.5rem;
 }
 
 .subText {
@@ -93,13 +104,25 @@ h1 {
 .textBlock {
     display: grid;
     gap: .75rem;
+    line-height: 1.5rem;
 }
 
+.author {
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+}
 
+.author img {
+    max-width: 2rem;
+    max-height: 2rem;
+}
 
 
 .attribution { 
     font-size: 11px; text-align: center; 
+    position: relative;
+    bottom: -50px;
 }
     
 .attribution a {
