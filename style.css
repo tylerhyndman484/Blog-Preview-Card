@@ -4,17 +4,17 @@
     --sub-text-color: hsl(0, 0%, 42%);
     --bold-text-color: hsl(0, 0%, 7%);
 
-    --heading-text-fw: font-weight: 800;
-    --category-text-fw: font-weight: 800;
-    --publish-text-fw: font-weight: 500;
-    --sub-text-fw: font-weight: 500;
-    --author-text-fw: font-weight: 800;
+    --heading-text-fw: 800;
+    --category-text-fw: 800;
+    --publish-text-fw: 400;
+    --sub-text-fw: 400;
+    --author-text-fw: 800;
 
-    --heading-text-fs: font-size: 1.5rem;
-    --category-text-fs: font-size: .875rem;
-    --sub-text-fs: font-size: 1rem;
-    --publish-text-fs: font-size: .875rem;
-    --author-name-fs: font-size: .875rem;
+    --heading-text-fs: 1.5rem;
+    --category-text-fs: .875rem;
+    --sub-text-fs: 1rem;
+    --publish-text-fs: .875rem;
+    --author-name-fs: .875rem;
 
 }
 
@@ -25,12 +25,21 @@
     font-family: 'Figtree';
 }
 
+html {
+    height: 100%;
+}
+
 h1 {
     all: initial;
 }
 
+/* color and font */
+
 body {
     background-color: var(--body-background-color);
+    height: 100%;
+    display: grid;
+    place-items: center;
 }
 
 .card {
@@ -38,30 +47,54 @@ body {
 }
 
 .category {
-    font-size: .875rem;
-    font-weight: 800;
+    font-size: var(--category-text-fs);
+    font-weight: var(--category-text-fw)
 }
 
 .publish {
-    font-size: .875rem;
-    font-weight: 500;
+    font-size: var(--publish-text-fs);
+    font-weight: var(--publish-text-fw);
 }
 
 h1 {
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: var(--heading-text-fs);
+    font-weight: var(--heading-text-fw);
     font-family: 'Figtree';
 }
 
 .subText {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: var(--sub-text-fs);
+    font-weight: var(--sub-text-fw);
+    color: var(--sub-text-color);
 }
 
 .author {
-    font-size: .875rem;
-    font-weight: 800;
+    font-size: var(--author-name-fs);
+    font-weight: var(--author-text-fw);
 }
+
+/* layout */
+
+.card {
+    max-width: 24rem;
+    height: fit-content;
+    padding: 1.5rem;
+}
+
+.headingImg {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.subText {
+    margin-bottom: 1.5rem;
+}
+
+.textBlock {
+    display: grid;
+    gap: .75rem;
+}
+
 
 
 
